@@ -1,0 +1,156 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dog Store</title>
+   <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+   <header>
+   <img src="dog.jpeg" >
+   <div id="headText"><h1>PUPSTAGRAM</h1></div> 
+   <svg xmlns="http://www.w3.org/2000/svg" onclick="
+   alert(`Thanks for Shopping with us.
+   Are you sure you want to view your cart?` )
+   "
+   id="cart" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+   <input type="search" id="headerSearch" placeholder="Search your spec">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="searchIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+   <ul>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">Products</a></li>
+   <li><a href="#">Contact</a></li>
+   </ul>
+   </header>
+   <div id="container">
+   <!-- <div id="child1">
+   <div id="grandChild">
+   <button id="likeButton">Like</button><br><br>
+   <input type="text" id="addComment">
+   <button id="postButton">Post</button>
+   </div>
+   </div>
+
+   <div id="child1">
+   <div id="grandChild">
+   <button id="likeButton">Like</button><br><br>
+   <input type="text" id="addComment">
+   <button id="postButton">Post</button>
+   </div>
+   </div>
+
+   <div id="child1">
+   <div id="grandChild">
+   <button id="likeButton">Like</button><br><br>
+   <input type="text" id="addComment">
+   <button id="postButton">Post</button>
+   </div>
+   </div>
+
+   <div id="child1">
+   <div id="grandChild">
+   <button id="likeButton">Like</button><br><br>
+   <input type="text" id="addComment">
+   <button id="postButton">Post</button>
+   </div>
+   </div> -->
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="ad comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+
+   <div id="child1">
+   <div id="grandChild">
+
+   <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+   <input type="text" id="addComment" placeholder="add comment...">
+   <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+   </div>
+   </div>
+
+   <div id="child1">
+      <div id="grandChild">
+   
+      <svg xmlns="http://www.w3.org/2000/svg" id="likeButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+      <input type="text" id="addComment" placeholder="add comment...">
+      <svg xmlns="http://www.w3.org/2000/svg" id="postButton" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+      </div>
+      </div>
+
+
+
+   </div>
+   <!-- <footer style="text-align: center; position: absolute; top:70rem; color: black;">
+   <p>&copy; 2024 PUPSTAGRAM. All rights reserved.</p>
+   </footer> -->
+
+
+   <script src="script.js"></script>
+   </body>
+   </html>
